@@ -36,10 +36,12 @@
 * Because earlier versions of TLS were called the Secure Sockets Layer (SSL), 
 * The TLS protocol, the successor of the secure socket layer (SSL) protocol, 
 * protects data using encryption. When users send their information to a 
-    website, TLS encrypts it before sending it. Then, only the server with the 
-    same public key as the client can open the message. This rule also applies 
-    when the server sends information back to the client. Only the client with thecorresponding key can read the data.
-    For a website to use TLS protocol, you must install a valid TLS/SSL certificate (often called an SSL certificate).
+    website, TLS encrypts it before sending it.
+    Then, only the server with the same public key as the client can open the message.
+    This rule also applies when the server sends information back to the client.
+    Only the client with thecorresponding key can read the data.
+    For a website to use TLS protocol, you must install a valid TLS/SSL certificate
+    (often called an SSL certificate).
 
 * the certificate is a data file that contains the website’s identity and the 
  public key for opening payload messages.
@@ -84,7 +86,8 @@ __steps of sign the certificate :__
 3-*pc send request and website reply with response+certificate.*
 ![response](response.png)
 ##### 4-secure directory
-if you want a spesific user access your dirctory, you should make it secure,anyone want to access you direcory must login with username and password.
+if you want a spesific user access your dirctory, you should make it secure,
+anyone want to access you direcory must login with username and password.
 
 ###### 1st way 
 >_stpes_
@@ -122,7 +125,8 @@ AuthUserFile /etc/httpd/conf/htpasswd
 Require Vaild-user
 ``````
 ##### 5-install mod_security
-this package is responsible of secure your data from anyone may send sql commands, prevent any one hasn't access to access this data.
+this package is responsible of secure your data from anyone may send sql commands,
+prevent any one hasn't access to access this data.
 
 _steps_
 * install mod_security package
