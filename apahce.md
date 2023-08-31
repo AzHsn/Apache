@@ -78,13 +78,19 @@ VirtualHost _default_:443>
     </VirtualHost>
 ``````
 __steps of sign the certificate :__
+
 1-*website send requet CSR (certificate signed request) to CA*.
+
 ![CSR](R.png)
 
 2-*CA reply with signed cirtificate.*
+
 ![signed Certificate](signed-certificate.png)
+
 3-*pc send request and website reply with response+certificate.*
+
 ![response](response.png)
+
 ##### 4-secure directory
 if you want a spesific user access your dirctory, you should make it secure,
 anyone want to access you direcory must login with username and password.
